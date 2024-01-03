@@ -1,32 +1,32 @@
 
-# Project: create a simple project creating AWS s3 bucket using terraform resources.
+# Create a simple project creating an AWS s3 bucket using terraform resources.
 
 Create Aws S3 bucket using Infrastructure as  tool terraform script 
 
-Step 1:  Create a ubuntu server
+Step 1:  Create a Ubuntu server
 
-1. launch instance and give name ubuntu. 
-2.	select ubuntu and t2. micro-CPU.
-3. download a new keypair.
+1. launch an instance and give the name ubuntu. 
+2.	Select Ubuntu and t2. micro-CPU.
+3. download a new key pair.
 
 4. select default VPC
-5. In security group allows ssh, https and http allow anywhere.
+5. In the security group SSH, https, and HTTP allow anywhere.
 6.	launch instance.
 
 
  ![image](https://github.com/dharmaraj257/Terraform-Projects/assets/100831265/c12f02f1-2429-4ad7-ba43-6296ed83f24f)
 
-Step 2: Log in to the ubuntu server using putty
-1.	copy the public IPv4 and paste on the putty.
+Step 2: Log in to the Ubuntu server using Putty
+1.	copy the public IPv4 and paste it on the putty.
 
-2.	Select ssh and go to the authentication and upload the ppk file.
-3.	Then put password ubuntu and log in.
+2.	Select SSH go to the authentication and upload the ppk file.
+3.	Then enter the password ubuntu and log in.
 
 ![image](https://github.com/dharmaraj257/Terraform-Projects/assets/100831265/36228471-a534-48a2-b842-c8d2d5c339e1)
 
 Step 3:	Update the server
 
-1.	use to update server use command
+1.	to update the server use the command
 
 2.	Sudo apt update -y
 ![image](https://github.com/dharmaraj257/Terraform-Projects/assets/100831265/6f8dfa2f-9f7a-43b6-8c45-2e04ff977541)
@@ -58,7 +58,7 @@ Step 4:	Install the terraform on the server.
 7.  	terraform -v
 ![image](https://github.com/dharmaraj257/Terraform-Projects/assets/100831265/9e18c7a2-0e89-482b-8916-90ca0d6b3fbe)
 
-Step 5:	Select registry and create s3 bucket
+Step 5:	Select the registry and create an s3 bucket
 
 1.    Go to the home page and click on the registry.
 
@@ -76,9 +76,9 @@ Step 5:	Select registry and create s3 bucket
 
 ![image](https://github.com/dharmaraj257/Terraform-Projects/assets/100831265/9cc7c3d6-e6ba-4f86-9678-ab9a87f7ab5b)
 
-4.	and the provider, region, access key, secret key
+4.	And the provider, region, access key, secret key
 
-
+```
 provider "aws" { region = "us-east-2"
 access_key = "***********************"
 secret_key = "0x9lrO****************W27nMZKIvBdnE"
@@ -92,8 +92,7 @@ acl  = "private"
 versioning { enabled = true
 }
 }
-
-
+```
 
 Output:
 
