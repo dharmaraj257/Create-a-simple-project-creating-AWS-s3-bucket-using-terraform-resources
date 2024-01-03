@@ -1,5 +1,5 @@
 
-# Create a simple project creating an AWS s3 bucket using terraform resources.
+# Create a simple project to create an AWS s3 bucket using Terraform resources.
 
 Create Aws S3 bucket using Infrastructure as  tool terraform script 
 
