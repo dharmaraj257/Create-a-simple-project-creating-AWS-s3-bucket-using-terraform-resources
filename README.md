@@ -26,7 +26,7 @@ Step 3:	Update the server
 
 1.	to update the server use the command
 
-2.	Sudo apt update -y
+2.	sudo apt update -y
 
 Step 4:	Install the terraform on the server.
 
@@ -39,11 +39,11 @@ Step 4:	Install the terraform on the server.
 3.	Paste on the server wget https://releases.hashicorp.com/terraform/1.3.4/terraform_1.3.4_linux_amd64.zip
 
 
-4.	    Sudo apt install unzip -y
+4.	    sudo apt install unzip -y
 
-5.	    Sudo unzip terraform_1.3.4_linux_amd64.zip
+5.	    sudo unzip terraform_1.3.4_linux_amd64.zip
 
-6.  	Sudo cp terraform /bin
+6.  	sudo cp terraform /bin
 
 7.  	terraform -v
 
